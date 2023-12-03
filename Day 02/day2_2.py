@@ -1,3 +1,5 @@
+# https://adventofcode.com/2023/day/2
+
 import logging.config
 from pathlib import Path
 import re

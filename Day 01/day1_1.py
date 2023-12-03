@@ -1,3 +1,5 @@
+# https://adventofcode.com/2023/day/1
+
 from pathlib import Path
 
 script_path = Path(__file__).parent
