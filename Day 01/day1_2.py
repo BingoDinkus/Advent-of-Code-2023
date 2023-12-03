@@ -1,12 +1,16 @@
 import logging
 import logging.config
+from pathlib import Path
 
-logging.config.fileConfig(fname='logging_config.ini', disable_existing_loggers=False)
+script_path = Path(__file__).parent
+logging_config_path = script_path.parent / 'logging_config.ini'
+
+logging.config.fileConfig(fname=logging_config_path, disable_existing_loggers=False)
 log = logging.getLogger(__name__)
 
 line_ct = 0
 running_total = 0
-f = open('day1_calibration.txt', 'r')
+f = open(script_path / 'day1_calibration.txt', 'r')
 
 # To be as lazy as possible, swap spelled out numbers
 # with actual numbers

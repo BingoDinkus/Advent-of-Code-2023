@@ -1,5 +1,9 @@
+from pathlib import Path
+
+script_path = Path(__file__).parent
+
 running_total = 0
-f = open('day1_calibration.txt', 'r')
+f = open(script_path / 'day1_calibration.txt', 'r')
 
 # Loop through each line in the file
 for l in f:
