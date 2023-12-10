@@ -2,14 +2,13 @@
 
 import logging.config
 from pathlib import Path
-import re
 
 script_path = Path(__file__).parent
 logging_config_path = script_path.parent / 'logging_config.ini'
 
 logging.config.fileConfig(fname=logging_config_path, disable_existing_loggers=False)
 log = logging.getLogger(__name__)
-6
+
 script_path = Path(__file__).parent
 logging_config_path = script_path.parent / 'logging_config.ini'
 
