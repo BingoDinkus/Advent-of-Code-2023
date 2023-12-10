@@ -1,8 +1,7 @@
-# https://adventofcode.com/2023/day/5
+# https://adventofcode.com/2023/day/6
 
 import logging.config
 from pathlib import Path
-import re
 
 script_path = Path(__file__).parent
 logging_config_path = script_path.parent / 'logging_config.ini'
